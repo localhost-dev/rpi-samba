@@ -40,7 +40,7 @@ if [ ${user_exists} -eq 0 ]; then
 	# Adding docker user with proper UID and GID (if possible)
 	echo "-- Creating samba user"
 
-	if [ ! -z ${group_id} ] && [ ${group_id} -gte "1000" ]; then
+	if [ ! -z ${group_id} ] && [ ${group_id} -ge 1000 ]; then
 		groupadd -g ${group_id} -o docker
 		group_id_cmd=" -g docker"
 	fi
