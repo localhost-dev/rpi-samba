@@ -79,4 +79,4 @@ docker run -d --restart=always \
 
 ### Github
 
-https://github.com/localhost-dev/kodi-rpi
+https://github.com/localhost-dev/rpi-samba
