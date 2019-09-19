@@ -10,10 +10,10 @@ apt-get autoclean && \
 apt-get clean
 
 # Add entrypoint script
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod u+x /entrypoint.sh
+ADD run.sh /run.sh
+RUN chmod u+x /run.sh
 
 # Expose ports from services
 EXPOSE 445
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/run.sh"]
